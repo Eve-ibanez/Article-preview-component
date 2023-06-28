@@ -1,0 +1,218 @@
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.article-section {
+    width: 330px;
+    height: 510px;
+    margin: 200px auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.article-section_img {
+    width: 330px;
+    height: 200px;
+    background-image: url(./images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.article-section_text {
+    padding: 30px;
+}
+
+.article-section_text_tittle {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 1.3em;
+}
+
+.article-section_text_paragraph {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 13px;
+    padding-right: 14px;
+}
+
+.article-section_text_contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.article-section_text_contact_div{
+    position: relative;
+    left: -15px;
+}
+
+.article-section_text_contact_div_name {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.article-section_text_contact_div_date {
+    color: var(--Grayish-Blue);
+    padding-top: 5px;
+}
+
+.article-section_text_contact_button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.article-section_text_share-buttons {
+    display: none;
+    
+}
+
+.active {
+    display: flex;    
+    width: 330px;
+    height: 70px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    padding: 0px 30px ;
+    position: relative;
+    top: -50px;
+    left: -30px;
+    box-sizing: border-box;
+}
+
+.article-section_text_share-buttons_share {
+    font-size: .9em;
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.facebook-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    padding-top: 25px;
+}
+
+.twitter-icon {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 1.4em;
+    padding-top: 25px;
+}
+
+.pinterest-icon {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 1.4em;
+    padding-top: 25px;
+}
+
+.article-section_text_share-buttons-share-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 70px; 
+    background-color: var(--Desaturated-Dark-Blue);
+    margin-top: 18px;
+
+}
+
+.share-icon {
+    padding-top: 7px;
+    
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 600px) {
+    .article-section {
+        width: 730px;
+        height: 280px;
+        display: flex;
+        overflow: visible;
+    }
+
+    .article-section_img {
+        width: 350px;
+        height: 100%;
+        background-size: 125%;
+    }
+
+    .article-section_text{
+        width: 440px;
+        padding: 15px 45px;
+    }
+    
+    .article-section_text_tittle{
+        font-size: 1.6em;
+    }
+
+    .article-section_text_contact_div {
+        left: -60px;
+    }
+    .article-section_text_share-buttons {
+        width: 250px;
+        height: 55px;
+        border-radius: 10px;
+        top: -120px;
+        left: 220px;
+        font-size: 1.1em;
+        
+        display: none;
+    }
+    .article-section_text_share-buttons_share{
+        padding-top: 20px;
+    }
+    .facebook-icon, .twitter-icon, .pinterest-icon{
+        padding-top: 20px;
+    }
+    .article-section_text_share-buttons-share-icon{
+        display: none;
+    }
+    .triangle {
+        display: flex;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+        position: absolute;
+        top: 55px;
+        left: 100px;
+    }
+
+    .active {
+        display: flex;
+    }
+}
